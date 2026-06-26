@@ -178,8 +178,16 @@ a {
 .hero-tagline {
   font-size: 1.25rem;
   font-weight: 600;
-  margin: 0 0 1rem;
+  margin: 0 0 0.75rem;
   opacity: 0.95;
+}
+
+.hero-meta {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0 0 1rem;
+  opacity: 0.85;
+  letter-spacing: 0.02em;
 }
 
 .hero-intro {
@@ -187,6 +195,13 @@ a {
   margin: 0 0 2rem;
   opacity: 0.9;
   line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
 }
 
 /* Buttons */
@@ -210,6 +225,58 @@ a {
 .btn-primary:focus {
   background: var(--color-primary-light);
   transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-1px);
+}
+
+button.btn {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Trust bar */
+
+.trust-bar {
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+  padding: 1.5rem 0;
+}
+
+.trust-bar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.trust-bar-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.trust-bar-list .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--color-primary);
 }
 
 /* Sections */
@@ -252,44 +319,6 @@ a {
   margin-bottom: 0;
 }
 
-.feature-list {
-  list-style: none;
-  margin: 2rem 0 0;
-  padding: 0;
-  display: grid;
-  gap: 1rem;
-}
-
-.feature-list li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.85rem;
-  padding: 1.25rem 1rem;
-  background: var(--color-bg);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  text-align: center;
-}
-
-.feature-list .icon {
-  width: 2.25rem;
-  height: 2.25rem;
-  padding: 0.65rem;
-  box-sizing: content-box;
-  background: var(--color-primary-light);
-  border-radius: 50%;
-  color: var(--color-primary-dark);
-}
-
-.feature-list li span {
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--color-text);
-  line-height: 1.35;
-}
-
 .icon {
   width: 1.35rem;
   height: 1.35rem;
@@ -297,7 +326,68 @@ a {
   color: var(--color-primary);
 }
 
+/* Lessons */
+
+.lessons-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.lesson-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  box-shadow: var(--shadow);
+}
+
+.lesson-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+  color: var(--color-text);
+}
+
+.lesson-card p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+/* Why choose */
+
+.why-choose-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.why-choose-list li {
+  position: relative;
+  padding-left: 1.75rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.why-choose-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.55rem;
+  height: 0.55rem;
+  background: var(--color-primary);
+  border-radius: 50%;
+}
+
 /* Pricing */
+
+.pricing-intro {
+  color: var(--color-text-muted);
+  margin: -0.5rem 0 1.5rem;
+}
 
 .pricing-grid {
   display: grid;
@@ -380,6 +470,33 @@ a {
   font-weight: 500;
 }
 
+.areas-outro {
+  color: var(--color-text-muted);
+  margin: 1.25rem 0 0;
+}
+
+.map-embed {
+  margin-top: 2rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow);
+  aspect-ratio: 16 / 9;
+}
+
+.map-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.map-embed-link {
+  margin: 1rem 0 0;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
 /* Testimonials */
 
 .testimonial {
@@ -414,6 +531,10 @@ a {
 .testimonial-relation {
   font-size: 0.9rem;
   color: var(--color-text-muted);
+}
+
+.testimonials-more {
+  margin: 1.5rem 0 0;
 }
 
 /* Contact */
@@ -472,6 +593,73 @@ a {
   color: var(--color-primary);
 }
 
+.contact-form-heading {
+  font-size: 1.25rem;
+  margin: 2.5rem 0 0.5rem;
+  color: var(--color-text);
+}
+
+.contact-form-intro {
+  color: var(--color-text-muted);
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.contact-form-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.contact-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.contact-form-field label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.contact-form-field input,
+.contact-form-field textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg);
+  color: var(--color-text);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.contact-form-field input:focus,
+.contact-form-field textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(94, 176, 232, 0.25);
+}
+
+.contact-form-field textarea {
+  resize: vertical;
+  min-height: 6rem;
+}
+
+.contact-form-submit {
+  justify-self: start;
+  margin-top: 0.25rem;
+}
+
 /* Footer */
 
 .site-footer {
@@ -491,8 +679,33 @@ a {
   line-height: 1.7;
 }
 
+.footer-links {
+  margin-bottom: 0.75rem !important;
+}
+
 .site-footer a {
   color: #fff;
+}
+
+/* Legal pages */
+
+.legal-content h1 {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  margin: 0 0 0.5rem;
+}
+
+.legal-content h2 {
+  font-size: 1.25rem;
+  margin: 2rem 0 0.75rem;
+}
+
+.legal-content p,
+.legal-content li {
+  color: var(--color-text-muted);
+}
+
+.legal-content ul {
+  padding-left: 1.25rem;
 }
 
 /* Desktop */
@@ -528,19 +741,18 @@ a {
     margin: 0;
   }
 
-  .feature-list {
+  .trust-bar-list {
     grid-template-columns: repeat(4, 1fr);
     gap: 1.25rem;
-    margin-top: 2.5rem;
   }
 
-  .feature-list li {
-    padding: 1.5rem 1rem;
+  .lessons-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .feature-list .icon {
-    width: 2.5rem;
-    height: 2.5rem;
+  .why-choose-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 
   .pricing-grid {
@@ -549,6 +761,18 @@ a {
 
   .areas-list {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact-form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-form-field--full {
+    grid-column: 1 / -1;
+  }
+
+  .contact-form-submit {
+    grid-column: 1 / -1;
   }
 
   .testimonial {
