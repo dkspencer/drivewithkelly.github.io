@@ -458,6 +458,11 @@ a {
   margin: 0;
 }
 
+.footer-nap {
+  margin-bottom: 0.75rem !important;
+  line-height: 1.7;
+}
+
 .site-footer a {
   color: #fff;
 }
