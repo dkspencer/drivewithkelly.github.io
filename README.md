@@ -39,7 +39,9 @@ At your domain registrar, add:
 
 | Type | Name | Value |
 |------|------|-------|
-| CNAME | www | drivewithkelly.github.io |
+| CNAME | www | dkspencer.github.io |
+
+**Note:** Use your GitHub username (here `dkspencer`) — not `drivewithkelly.github.io`, unless the repo is owned by a `drivewithkelly` GitHub account.
 
 DNS changes can take up to 24 hours to propagate.
 

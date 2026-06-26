@@ -74,15 +74,47 @@ a {
 .logo {
   display: flex;
   align-items: center;
+  gap: 0.65rem;
   text-decoration: none;
-  line-height: 0;
   flex-shrink: 0;
+  min-width: 0;
 }
 
-.logo img {
+.logo-mark {
+  width: 2.75rem;
   height: 2.75rem;
-  width: auto;
-  max-width: min(240px, 58vw);
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 0;
+}
+
+.logo-name {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.logo-tagline {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+@media (max-width: 420px) {
+  .logo-tagline {
+    display: none;
+  }
 }
 
 .nav-list {
@@ -438,8 +470,17 @@ a {
     padding-bottom: 1.25rem;
   }
 
-  .logo img {
+  .logo-mark {
+    width: 3.25rem;
     height: 3.25rem;
+  }
+
+  .logo-name {
+    font-size: 1.15rem;
+  }
+
+  .logo-tagline {
+    font-size: 0.7rem;
   }
 
   .hero {
