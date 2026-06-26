@@ -16,14 +16,14 @@
   <meta property="og:title" content="Automatic Driving Lessons Macclesfield &amp; Buxton | Drive With Kelly">
   <meta property="og:description" content="Patient automatic driving lessons in Macclesfield, Buxton and Derbyshire. Modern VW T-Cross, flexible times — taking new students now.">
   <meta property="og:url" content="https://drivewithkelly.co.uk/">
-  <meta property="og:image" content="https://drivewithkelly.co.uk/assets/kelly-and-car.jpg">
+  <meta property="og:image" content="https://drivewithkelly.co.uk/assets/kelly-and-car-og.jpg">
   <meta property="og:image:alt" content="Kelly, driving instructor, beside her blue Volkswagen T-Cross">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Automatic Driving Lessons Macclesfield &amp; Buxton | Drive With Kelly">
   <meta name="twitter:description" content="Patient automatic driving lessons in Macclesfield, Buxton and Derbyshire. Modern VW T-Cross, flexible times — taking new students now.">
-  <meta name="twitter:image" content="https://drivewithkelly.co.uk/assets/kelly-and-car.jpg">
+  <meta name="twitter:image" content="https://drivewithkelly.co.uk/assets/kelly-and-car-og.jpg">
   <meta name="twitter:image:alt" content="Kelly, driving instructor, beside her blue Volkswagen T-Cross">
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -49,7 +49,7 @@
         "@id": "https://drivewithkelly.co.uk/#business",
         "name": "Drive With Kelly",
         "url": "https://drivewithkelly.co.uk/",
-        "image": "https://drivewithkelly.co.uk/assets/kelly-and-car.jpg",
+        "image": "https://drivewithkelly.co.uk/assets/kelly-and-car-og.jpg",
         "logo": "https://drivewithkelly.co.uk/assets/logo-circle.jpg",
         "description": "Automatic driving lessons with a calm, patient instructor in Macclesfield, Buxton, the Peak District and Derbyshire.",
         "telephone": "+447535892435",
@@ -65,9 +65,7 @@
         "currenciesAccepted": "GBP",
         "paymentAccepted": "Cash, Bank transfer",
         "areaServed": [
-          { "@type": "City", "name": "Macclesfield" },
-          { "@type": "City", "name": "Buxton" },
-          { "@type": "AdministrativeArea", "name": "Peak District" },
+          { "@type": "AdministrativeArea", "name": "Cheshire", "containedInPlace": { "@type": "Country", "name": "United Kingdom" } },
           { "@type": "AdministrativeArea", "name": "Derbyshire", "containedInPlace": { "@type": "Country", "name": "United Kingdom" } }
         ],
         "geo": {
@@ -147,13 +145,6 @@
           <p class="hero-intro">Learn with a calm, patient instructor who builds confidence on the road. Local lessons with flexible times — taking new students now.</p>
           <a href="#contact" class="btn btn-primary">Get in touch</a>
         </div>
-        <img
-          src="assets/kelly-and-car.jpg"
-          alt="Kelly, driving instructor, standing beside her blue Volkswagen T-Cross holding a sign that reads Taking New Students Now"
-          class="hero-image"
-          width="800"
-          height="600"
-        >
       </div>
     </section>
 
@@ -161,30 +152,36 @@
       <div class="container">
         <h2 id="about-heading">About Kelly</h2>
         <div class="about-grid">
-          <!-- Optional: add <img src="assets/kelly.jpg" alt="Kelly, driving instructor" class="about-photo"> when photo is available -->
+          <img
+            src="assets/kelly-and-car.png"
+            alt="Kelly, driving instructor, standing beside her blue Volkswagen T-Cross"
+            class="about-photo"
+            width="1284"
+            height="897"
+          >
           <div class="about-content">
-            <p>Kelly is a calm and patient mother with over 30 years of experience behind the wheel. As an automatic driving specialist, she helps learners of all ages feel at ease on the road — whether you're a complete beginner or returning to driving later in life.</p>
+            <p>Kelly is a calm and patient driving instructor with over 30 years of experience behind the wheel. As an automatic driving specialist, she helps learners of all ages feel at ease on the road — whether you're a complete beginner or returning to driving later in life.</p>
             <p>Lessons take place in a modern <strong>Volkswagen T-Cross</strong> (2026 plate), giving you a comfortable, reliable car to learn in.</p>
-            <ul class="feature-list">
-              <li>
-                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                Patient, experienced instructor
-              </li>
-              <li>
-                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                Build confidence on the road
-              </li>
-              <li>
-                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
-                Automatic lessons only
-              </li>
-              <li>
-                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/><path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
-                Local &amp; reliable
-              </li>
-            </ul>
           </div>
         </div>
+        <ul class="feature-list">
+          <li>
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span>Patient, experienced instructor</span>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Build confidence on the road</span>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+            <span>Automatic lessons only</span>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/><path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+            <span>Local &amp; reliable</span>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -216,11 +213,7 @@
         <ul class="areas-list">
           <li>
             <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Macclesfield
-          </li>
-          <li>
-            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Buxton &amp; Peak District
+            Cheshire
           </li>
           <li>
             <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>

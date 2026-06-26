@@ -147,21 +147,15 @@ a {
 }
 
 .hero-inner {
-  display: grid;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .hero-content {
   max-width: 640px;
-}
-
-.hero-image {
-  width: 100%;
-  max-width: 520px;
   margin: 0 auto;
-  border-radius: var(--radius);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
 .hero h1 {
@@ -232,9 +226,9 @@ a {
 
 .about-photo {
   width: 100%;
-  max-width: 320px;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  max-width: 480px;
+  background: transparent;
+  filter: drop-shadow(0 4px 16px rgba(46, 122, 173, 0.2));
   margin: 0 auto;
 }
 
@@ -244,22 +238,45 @@ a {
 }
 
 .about-content p:last-of-type {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
 }
 
 .feature-list {
   list-style: none;
-  margin: 0;
+  margin: 2rem 0 0;
   padding: 0;
   display: grid;
-  gap: 0.75rem;
+  gap: 1rem;
 }
 
 .feature-list li {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 0.75rem;
-  font-weight: 500;
+  gap: 0.85rem;
+  padding: 1.25rem 1rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.feature-list .icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0.65rem;
+  box-sizing: content-box;
+  background: var(--color-primary-light);
+  border-radius: 50%;
+  color: var(--color-primary-dark);
+}
+
+.feature-list li span {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.35;
 }
 
 .icon {
@@ -492,16 +509,6 @@ a {
     padding: 5rem 0;
   }
 
-  .hero-inner {
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-  }
-
-  .hero-image {
-    margin: 0;
-    max-width: none;
-  }
-
   .section {
     padding: 4.5rem 0;
   }
@@ -513,6 +520,21 @@ a {
 
   .about-photo {
     margin: 0;
+  }
+
+  .feature-list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    margin-top: 2.5rem;
+  }
+
+  .feature-list li {
+    padding: 1.5rem 1rem;
+  }
+
+  .feature-list .icon {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .pricing-grid {
