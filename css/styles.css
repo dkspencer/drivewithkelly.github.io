@@ -497,46 +497,6 @@ button.btn {
   font-size: 0.95rem;
 }
 
-/* Testimonials */
-
-.testimonial {
-  background: var(--color-bg);
-  border-left: 4px solid var(--color-primary);
-  border-radius: 0 var(--radius) var(--radius) 0;
-  padding: 1.75rem;
-  margin: 0;
-  box-shadow: var(--shadow);
-}
-
-.testimonial p {
-  font-size: 1.1rem;
-  font-style: italic;
-  margin: 0 0 1.25rem;
-  color: var(--color-text);
-  line-height: 1.7;
-}
-
-.testimonial footer {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-}
-
-.testimonial cite {
-  font-style: normal;
-  font-weight: 700;
-  color: var(--color-text);
-}
-
-.testimonial-relation {
-  font-size: 0.9rem;
-  color: var(--color-text-muted);
-}
-
-.testimonials-more {
-  margin: 1.5rem 0 0;
-}
-
 /* Contact */
 
 .contact {
@@ -773,10 +733,6 @@ button.btn {
 
   .contact-form-submit {
     grid-column: 1 / -1;
-  }
-
-  .testimonial {
-    max-width: 720px;
   }
 }
 
